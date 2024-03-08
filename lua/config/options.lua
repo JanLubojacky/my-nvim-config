@@ -6,5 +6,5 @@ vim.opt.incsearch = true
 vim.opt.updatetime = 50
 vim.opt.smartindent = true
 vim.opt.autoindent = true
-vim.g.autoformat = false
+vim.g.autoformat = true
 
