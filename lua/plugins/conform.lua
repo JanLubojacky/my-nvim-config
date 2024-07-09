@@ -3,7 +3,8 @@ return {
   opts = function()
     local opts = {
       formatters_by_ft = {
-        python = {"ruff_fix", "ruff_format", "isort"}
+        python = {"ruff_fix", "ruff_format"},
+        rust = {"rustfmt"},
       }
     }
     return opts
