@@ -17,7 +17,7 @@ return {
     -- Set idle delay to 100ms
     vim.g.codeium_idle_delay = 100
 
-    vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+    vim.keymap.set('i', '<M-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
     -- vim.keymap.set('i', '<TAB>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
   end
 }
