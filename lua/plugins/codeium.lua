@@ -17,6 +17,7 @@ return {
     -- Set idle delay to 100ms
     vim.g.codeium_idle_delay = 100
 
-    vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+    -- Set keymaps
+    vim.keymap.set('i', '<C-CR>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
   end
 }

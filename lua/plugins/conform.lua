@@ -8,6 +8,7 @@ return {
         cpp = {"clang-format"},
         python = {"ruff_fix", "ruff_format"},
         rust = {"rustfmt"},
+        json = {"jq"},
       }
     }
     return opts
