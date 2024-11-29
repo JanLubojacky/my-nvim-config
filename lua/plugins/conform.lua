@@ -9,6 +9,7 @@ return {
         python = {"ruff_fix", "ruff_format"},
         rust = {"rustfmt"},
         json = {"jq"},
+        yaml = {"yamlfmt"}
       }
     }
     return opts
