@@ -1,7 +1,6 @@
 return {
-  'Exafunction/codeium.vim',
+  "Exafunction/codeium.vim",
   config = function()
-
     -- Disable Codeium by default for all filetypes
     vim.g.codeium_filetypes = { all = false }
 
@@ -17,7 +16,12 @@ return {
     -- Set idle delay to 100ms
     vim.g.codeium_idle_delay = 100
 
+    -- Disable tab autocomplete
+    vim.g.codeium_no_map_tab = true
+
     -- Set keymaps
-    vim.keymap.set('i', '<C-CR>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
-  end
+    vim.keymap.set("i", "<C-CR>", function()
+      return vim.fn["codeium#Accept"]()
+    end, { expr = true, silent = true })
+  end,
 }
